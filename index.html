@@ -24,7 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="normalize.css" />
+    <!-- <link rel="stylesheet" href="normalize.css" /> -->
     <link rel="stylesheet" href="style.css" />
     <style>
       body {
@@ -36,7 +36,14 @@
     <main>
       <section class="one">
         <picture>
-          <source class="img-mobile" media="(max-width:375px)" srcset="images/image-product-mobile.jpg">
+          <source
+            media="(min-width: 640px)"
+            srcset="images/image-product-desktop.jpg"
+          />
+          <source
+            media="(max-width: 639px)"
+            srcset="images/image-product-mobile.jpg"
+          />
           <img class="img-desktop" src="images/image-product-desktop.jpg" alt="product">
         </picture>
       </section>
